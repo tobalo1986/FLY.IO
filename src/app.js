@@ -5,7 +5,7 @@ app.use(express.json());
 
 // Ruta básica
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Hola caracola con cocacola!' });
+    res.status(200).json({ message: 'tendo hambre sueño y sed!' });
 });
 
 // Ruta de ejemplo para pruebas
