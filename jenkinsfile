@@ -15,13 +15,6 @@ pipeline {
     }
     
     stages {
-
-        stage('Verify Fly.io Token') {
-    steps {
-        withCredentials([string(credentialsId: 'FLY_API_TOKEN_TEST', variable: 'FLY_API_TOKEN_TEST')]) {
-            sh 'echo "FLY_API_TOKEN_TEST starts with: ${FLY_API_TOKEN_TEST:0:4}..."'
-        }
-    }
  
         stage('Install Fly.io') {
             steps {
